@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect } from 'react';
 import { useNavbarContext } from '../../context/NavbarContext'; // Adjust the path if needed
 import Image from 'next/image';
@@ -89,24 +89,13 @@ const ServicePage = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
 
-      <div className="w-full md:w-3/4 lg:w-2/3 mx-auto bg-slate-100 p-4 rounded-lg mt-6">
-        <div className="w-full flex justify-center">
-          <h1 className="mb-4 text-3xl font-large text-center font-openSans">What We Do</h1>
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col items-center justify-center gap-12">
+          {services.map((service, index) => (
+            <ServiceCard key={index} {...service} alignLeft={index % 2 === 0} />
+          ))}
         </div>
-        <p className="mb-3 font-light font-openSans text-gray-500 dark:text-gray-400 text-gray-950 tracking-wide" style={{ textAlign: 'justify' }}>
-          Middleway films has continually pushed the envelope in all areas, producing entertaining content
-          and capturing audiences of Nepal on a wide range of platforms. Our goal has been and always will be
-          to reach a global audience with top-notch, ground-breaking tales that combine quality, innovation, and attention to detail.
-        </p>
       </div>
-
-      {services.map((service, index) => (
-        <ServiceCard
-          key={index}
-          {...service}
-          alignLeft={index % 2 === 0} // Alternates the alignment based on index
-        />
-      ))}
     </div>
   );
 };
