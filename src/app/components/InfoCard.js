@@ -4,7 +4,7 @@ const InfoCard = ({ icon, title, description, href }) => {
   return (
     <div className="flex flex-col items-center p-4 border rounded-lg shadow-sm min-w-[250px] h-32 justify-center">
       <div className="text-3xl mb-2 transition-transform duration-300 transform hover:scale-125">
-        {icon} {/* Render the icon */}
+        {icon} 
       </div>
       <h4 className="font-bold text-lg mb-1 text-center">{title}</h4>
       <a

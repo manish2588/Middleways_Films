@@ -1,4 +1,5 @@
 // components/VideoGallery.js
+"use client"
 import React from 'react';
 import Button from './Button';
 
