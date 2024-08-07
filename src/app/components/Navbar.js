@@ -92,9 +92,9 @@ const Navbar = () => {
           <li className={`${pathname === '/pages/service' ? 'bg-blue-300 text-white' : ''} hover:bg-blue-400 hover:text-white transition duration-300`}>
             <Link href="/pages/service" className="block p-2" onClick={handleLinkClick}>Services</Link>
           </li>
-          <li className={`relative ${pathname === '/media' ? 'bg-blue-300 text-white' : ''} hover:bg-blue-400 hover:text-white transition duration-300`}>
+          <li className={`relative ${pathname === '/pages/media' ? 'bg-blue-300 text-white' : ''} hover:bg-blue-400 hover:text-white transition duration-300`}>
             <div className="flex items-center">
-              <Link href="/media" className="block p-2 flex-1" onClick={handleLinkClick}>Media</Link>
+              <Link href="/pages/media" className="block p-2 flex-1" onClick={handleLinkClick}>Media</Link>
               <button 
                 className="ml-2 text-black text-3xl focus:outline-none"
                 onClick={toggleDropdown}

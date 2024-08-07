@@ -54,6 +54,7 @@ const VideoGallery = () => {
         <Button
           className="mb-4 font-serif mt-8 bg-transparent text-black border border-black hover:bg-black hover:text-white hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-thin text-sm w-full sm:w-auto px-5 py-2 text-center"
           label="VIEW ALL PROJECTS"
+          href="/pages/media"
         />
         </div>
     </div>

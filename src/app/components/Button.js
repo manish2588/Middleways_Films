@@ -7,7 +7,7 @@ const Button = ({ type = "button", onClick, className, style, label, href }) => 
       window.location.href = href; // Use window.location.href for navigation
     }
     if (onClick) {
-      onClick(); // Call the onClick handler if provided
+      onClick(); 
     }
   };
 
