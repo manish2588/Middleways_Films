@@ -33,8 +33,8 @@ export default function Home() {
   ];
 
   return (
-    <main className="mt-22">
-      <div className="relative w-full h-[60vh] sm:h-[80vh] mt-8">
+    <main className="mt-24">
+      <div className="relative w-full h-[60vh] sm:h-[80vh] ">
         <Image
           src={brimage}
           alt="Background Image"
@@ -44,9 +44,8 @@ export default function Home() {
           sizes="100vw"
           priority
         />
-
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-6 mb-12 p-4 md:p-8 lg:p-12">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center mt-2 space-y-6 mb-12 p-4 md:p-8 lg:p-12">
           <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold">
             <span className="block font-josefinSans">We Are Story Teller</span>
             <span className="block font-josefinSans">At</span>
