@@ -34,17 +34,20 @@ export default function Home() {
 
   return (
     <main className="mt-24">
-      {/* Hero Section */}
-      <div className="relative w-full h-[80vh]">
-        <Image
-          src={brimage}
-          alt="Background Image"
-          fill
-          style={{ objectFit: "cover" }}
-          quality={100}
-          sizes="100vw"
-          priority
-        />
+   <div className="relative w-full h-[60vh] sm:h-[80vh]">
+  <Image
+    src={brimage}
+    alt="Background Image"
+    fill
+    style={{ objectFit: "cover" }}
+    quality={100}
+    sizes="100vw"
+    priority
+  />
+
+
+
+
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-6 mb-10 p-4 md:p-8 lg:p-12">
           <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold">
@@ -104,12 +107,12 @@ export default function Home() {
       </div>
 
       {/* Contact Info */}
-      <div className="mt-10 mb-10 flex flex-col items-center">
+       <div className="mt-10 mb-10 flex flex-col items-center">
         <p className="text-xl md:text-2xl lg:text-3xl underline underline-offset-8 decoration-blue-500 font-semibold">GET IN TOUCH</p>
         <div className="mt-10 mb-10">
           <ContactInfo />
         </div>
-      </div>
+        </div>
 
       {/* Video Gallery */}
       <div className="mx-4 md:mx-10 lg:mx-12">

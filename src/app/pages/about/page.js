@@ -51,8 +51,8 @@ const teamMembers = [
 function AboutUs() {
   return (
     <div>
-      <div className="flex justify-center mt-24 mb-8">
-        <h2 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white mt-4">Who We Are</h2>
+      <div className="flex justify-center mt-28 mb-8">
+        <h2 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white mt-8">Who We Are</h2>
       </div>
       <div className="w-full md:w-3/4 lg:w-2/3 mx-auto p-4 rounded-lg mt-4">
         <p className="mb-3 font-openSans font-light text-xl text-gray-950 dark:text-gray-400" style={{ textAlign: 'justify' }}>
