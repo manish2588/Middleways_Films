@@ -51,7 +51,7 @@ const teamMembers = [
 function AboutUs() {
   return (
     <div>
-      <div className="flex justify-center mt-28 mb-8">
+      <div className="flex justify-center mt-24 mb-8">
         <h2 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white mt-8">Who We Are</h2>
       </div>
       <div className="w-full md:w-3/4 lg:w-2/3 mx-auto p-4 rounded-lg mt-4">
