@@ -1,4 +1,4 @@
-// src/components/VideoGallery.js
+
 "use client"
 import { useEffect, useState } from 'react';
 import { fetchVideos } from '../lib/pexels';

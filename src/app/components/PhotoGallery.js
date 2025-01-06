@@ -1,4 +1,4 @@
-// src/components/PhotoGallery.js
+
 "use client"
 import { useEffect, useState } from 'react';
 import { fetchPhotos } from '../lib/pexels';

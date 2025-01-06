@@ -42,13 +42,13 @@ function ContactForm() {
 
   return (
     <div>
-      {/* Form component */}
+      
       <form className="max-w-md mx-auto mt-6" onSubmit={formik.handleSubmit}>
         <div>
           <p className='text-center text-xl text-blue-600 font-serif'>Don't be stranger</p>
           <h1 className='text-center text-3xl mt-4 text-blue-600 font-serif'>You tell us. We Listen</h1>
         </div>
-        {/* Input fields for name, email, phone, and message */}
+       
         <div className="relative z-0 w-full mb-5 group mt-4">
           <input
             type="text"
@@ -61,7 +61,7 @@ function ContactForm() {
             onBlur={formik.handleBlur}
             required
           />
-          {/* Error message display for name field if touched and error exists */}
+        
           {formik.touched.name && formik.errors.name ? (
             <p className="error">{formik.errors.name}</p>
           ) : null}
@@ -79,7 +79,7 @@ function ContactForm() {
             onBlur={formik.handleBlur}
             required
           />
-          {/* Error message display for email field if touched and error exists */}
+       
           {formik.touched.email && formik.errors.email ? (
             <p className="error">{formik.errors.email}</p>
           ) : null}
@@ -97,7 +97,7 @@ function ContactForm() {
             onBlur={formik.handleBlur}
             required
           />
-          {/* Error message display for phone field if touched and error exists */}
+       
           {formik.touched.phone && formik.errors.phone ? (
             <p className="error">{formik.errors.phone}</p>
           ) : null}
@@ -115,7 +115,7 @@ function ContactForm() {
             onBlur={formik.handleBlur}
             required
           />
-          {/* Error message display for message field if touched and error exists */}
+      
           {formik.touched.message && formik.errors.message ? (
             <p className="error">{formik.errors.message}</p>
           ) : null}

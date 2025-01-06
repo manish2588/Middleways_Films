@@ -1,12 +1,12 @@
 "use client";
 import { useState } from 'react';
 import Image from 'next/image';
-import Button from '../components/Button'; // Adjust the path if necessary
+import Button from '../components/Button'; 
 
 const ServiceCard = ({ image, title, description, moreDescription, alignLeft }) => {
   const [showMore, setShowMore] = useState(false);
 
-  // Button properties stored in an object
+  
   const buttonProps = {
     onClick: () => setShowMore(!showMore),
     className: "font-serif bg-transparent text-black border border-blue-500 hover:bg-blue-500 hover:text-black hover:border-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-lg w-full sm:w-auto px-2 dark:bg-transparent dark:hover:bg-blue-600 dark:focus:ring-blue-800",
@@ -29,7 +29,7 @@ const ServiceCard = ({ image, title, description, moreDescription, alignLeft }) 
               </p>
             )}
           </div>
-          {/* Read more button */}
+        
           <div className="flex justify-start mt-4">
             <Button
               onClick={buttonProps.onClick}

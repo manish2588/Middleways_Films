@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import image from "../../../public/images/hi-removebg-preview.png"; // Adjust the path if necessary
-import { useNavbarContext } from "../context/NavbarContext"; // Adjust the path if needed
+import image from "../../../public/images/hi-removebg-preview.png"; 
+import { useNavbarContext } from "../context/NavbarContext"; 
 
 const Navbar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Sidebar */}
+     
       <div
         className={`fixed top-0 left-0 bg-blue-200 text-black transform transition-transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
@@ -189,7 +189,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Navbar */}
+     
       <nav
         className={`fixed top-0 left-0 w-full flex items-center justify-between z-20 transition-all duration-300 ${
           isNavbarTransparent

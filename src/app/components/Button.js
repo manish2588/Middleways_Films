@@ -4,7 +4,7 @@ import React from 'react';
 const Button = ({ type = "button", onClick, className, style, label, href }) => {
   const handleClick = () => {
     if (href && typeof window !== 'undefined') {
-      window.location.href = href; // Use window.location.href for navigation
+      window.location.href = href; 
     }
     if (onClick) {
       onClick(); 

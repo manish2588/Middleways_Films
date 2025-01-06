@@ -1,4 +1,4 @@
-// components/VideoGallery.js
+
 "use client"
 import React from 'react';
 import Button from './Button';
@@ -24,8 +24,7 @@ const videos = [
     url: 'https://www.youtube.com/embed/dao3msTsVjk',
     link: 'https://www.youtube.com/watch?v=dao3msTsVjk',
   },
- 
-  // Add more video objects here
+
 ];
 
 const VideoGallery = () => {
@@ -36,7 +35,7 @@ const VideoGallery = () => {
         {videos.map((video, index) => (
           <div key={index} className="video-item relative">
             <iframe
-              className="w-full h-80" // Increased height
+              className="w-full h-80"
               src={video.url}
               title={video.title}
               frameBorder="0"
