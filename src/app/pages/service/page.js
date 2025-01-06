@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from 'react';
-import { useNavbarContext } from '../../context/NavbarContext'; // Adjust the path if needed
+import { useNavbarContext } from '../../context/NavbarContext'; 
 import Image from 'next/image';
 import image1 from "../../../../public/images/A.png";
 import image2 from "../../../../public/images/B.png";
@@ -72,7 +72,7 @@ const ServicePage = () => {
         <meta name="keywords" content="Cinematography, Film Production, Social Media Content, Equipment Rental, VFX, SFX" />
         <meta property="og:title" content="Our Services | Middleways Films" />
         <meta property="og:description" content="Explore the diverse range of services offered by Middleways Films, including expert cinematography, production management, and more. Contact us for your film production needs." />
-        <meta property="og:image" content="/path-to-your-image.jpg" /> {/* Update with actual image path */}
+        <meta property="og:image" content="/path-to-your-image.jpg" /> 
         <meta property="og:url" content="https://yourwebsite.com/services" />
         <link rel="canonical" href="https://yourwebsite.com/services" />
       </Head>

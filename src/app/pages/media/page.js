@@ -11,7 +11,7 @@ const FullScreenBackground = () => {
           muted
           loop
         >
-          <source src="/videos/5662871-sd_640_360_25fps.mp4" type="video/mp4" /> {/* Replace with your video path */}
+          <source src="/videos/5662871-sd_640_360_25fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

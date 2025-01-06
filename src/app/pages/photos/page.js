@@ -1,4 +1,4 @@
-// src/pages/photos.js
+
 import PhotoGallery from "../../components/PhotoGallery";
 const PhotosPage = () => {
   return (
