@@ -1,4 +1,4 @@
-// src/lib/pexels.js
+
 const API_KEY = 'Q01HrkOoqJH4TM7dWITQVRdkX0i9gRxProX0FclSuFs7DkTZmWfPxxSr';
 
 export const fetchPhotos = async (query, page = 1, perPage = 18) => {
