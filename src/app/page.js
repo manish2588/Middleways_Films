@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* About Us Section */}
+      
       <div className="w-full mx-auto p-4 rounded-lg mt-6 md:w-3/4 lg:w-2/3">
         <div className="w-full flex flex-col items-center text-center">
           <h1 className="mb-4 text-2xl md:text-3xl lg:text-4xl font-serif">
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Clients Slider */}
+     
       <div className="p-4 flex flex-col justify-center text-center mx-4 md:mx-10 lg:mx-20 rounded-md space-y-8 mt-8">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4 font-openSans">
           OUR HAPPY CLIENTS
@@ -124,7 +124,7 @@ export default function Home() {
         <ImageSlider images={images1} />
       </div>
 
-      {/* Awards Slider */}
+      
       <div className="p-4 flex justify-center mx-4 md:mx-10 lg:mx-20 rounded-md space-y-8 mt-8">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 mt-10">
           Movies Awards
@@ -132,7 +132,7 @@ export default function Home() {
         <ImageSlider3 images={images3} />
       </div>
 
-      {/* Contact Info */}
+      
       <div className="mt-10 mb-10 flex flex-col items-center">
         <p className="text-xl md:text-2xl lg:text-3xl underline underline-offset-8 decoration-blue-500 font-semibold">
           GET IN TOUCH
@@ -142,7 +142,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Video Gallery */}
+     
       <div className="mx-4 md:mx-10 lg:mx-12">
         <VideoGallery />
       </div>
