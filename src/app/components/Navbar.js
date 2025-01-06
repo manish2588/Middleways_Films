@@ -14,7 +14,10 @@ const Navbar = () => {
 
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
   const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
-
+    const handleMediaClick=()=>{
+      setSidebarOpen(false);
+      setDropdownOpen(false);
+    }
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -62,7 +65,7 @@ const Navbar = () => {
     <>
      
       <div
-        className={`fixed top-0 left-0 bg-blue-200 text-black transform transition-transform ${
+        className={`fixed top-0 left-0 bg-blue-200 text-black transform transition-transform duration-500 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } z-30
         w-64 h-full md:w-72 md:h-full lg:w-96 lg:h-full
@@ -153,11 +156,12 @@ const Navbar = () => {
               </button>
             </div>
             {isDropdownOpen && (
-              <ul className="absolute left-full mt-1 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+              <ul className="absolute left-60 mt-1 w-auto bg-white border border-gray-200 rounded-md shadow-lg z-50">
                 <li className="hover:bg-gray-100">
                   <Link
                     href="/pages/photos"
                     className="block px-4 py-2 text-black"
+                    onClick={handleMediaClick}
                   >
                     Photos
                   </Link>
@@ -166,6 +170,7 @@ const Navbar = () => {
                   <Link
                     href="/pages/videos"
                     className="block px-4 py-2 text-black"
+                    onClick={handleMediaClick}
                   >
                     Videos
                   </Link>
@@ -238,7 +243,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center mr-16">
+    <div className="flex items-center mr-4">
           <Link href="/pages/joinus">
             <button className="bg-teal-600 font-openSans hover:bg-teal-800 focus:ring-4 focus:ring-blue-300 text-lg rounded-full border-teal-200 px-4 py-2 text-center transition duration-300">
               JOIN US
